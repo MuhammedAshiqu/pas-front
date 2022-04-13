@@ -5,7 +5,7 @@ import "./Allorders.css";
 function Allorders() {
   const [data, setdata] = useState([]);
   const getAllorders = () => {
-    axios.get("http://localhost:8008/admin/all-orders").then((response) => {
+    axios.get("ttps://productsandservices.herokuapp.com/admin/all-orders").then((response) => {
       console.log(response);
       setdata(response.data.orders);
     });

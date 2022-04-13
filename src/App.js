@@ -60,7 +60,7 @@ function App() {
     it && setisLoaged(true);
     setthing(it);
 
-    axios.get("http://localhost:8008/signin").then((res) => {
+    axios.get("ttps://productsandservices.herokuapp.com/signin").then((res) => {
       console.log(res);
       res.user && setisLoaged(true);
     });

@@ -7,7 +7,7 @@ function ViewService() {
 
   const [data, setdata] = useState([]);
   const getServices = () => {
-    axios.get("http://localhost:8008/viewService").then((response) => {
+    axios.get("ttps://productsandservices.herokuapp.com/viewService").then((response) => {
       console.log(response);
       setdata(response.data.service);
     });

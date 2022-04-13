@@ -11,7 +11,7 @@ function ShowallProds() {
     const getAllProds = () => {
         console.log('first');
         axios
-            .get(`http://localhost:8008/seller/all-prod/${seller?.Email}`)
+            .get(`ttps://productsandservices.herokuapp.com/seller/all-prod/${seller?.Email}`)
             .then((result) => {
                 setallprods(result.data.response);
             });
@@ -21,7 +21,7 @@ function ShowallProds() {
         let it = window.confirm('Are You Sure Delete ?');
         it &&
             axios
-                .delete(`http://localhost:8008/seller/delete-product/${id}`)
+                .delete(`ttps://productsandservices.herokuapp.com/seller/delete-product/${id}`)
                 .then((res) => {
                     console.log(res);
                     setref(true);

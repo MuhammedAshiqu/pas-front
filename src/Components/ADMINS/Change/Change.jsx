@@ -10,7 +10,7 @@
 //   const [adminTrue, setadminTrue] = AdminTrue;
 //   const [items, setitems] = useState([]);
 //   const getAdmindetails = () => {
-//     axios.get("http://localhost:8008/admin/").then((response) => {
+//     axios.get("ttps://productsandservices.herokuapp.com/admin/").then((response) => {
 //       console.log(response);
 //       setitems(response.data.products);
 //     });
@@ -18,7 +18,7 @@
 //   const deleteItem = (id) => {
 //     alert("deleted");
 //     axios
-//       .post(`http://localhost:8008/admin/delete-product/${id}`)
+//       .post(`ttps://productsandservices.herokuapp.com/admin/delete-product/${id}`)
 //       .then((res) => {
 //         console.log(res);
 //         setref(true);
@@ -28,7 +28,7 @@
 //   const deleteAllItem = () => {
 //     alert("deleted");
 
-//     axios.get("http://localhost:8008/admin/delete-all-products").then((res) => {
+//     axios.get("ttps://productsandservices.herokuapp.com/admin/delete-all-products").then((res) => {
 //       console.log(res);
 //       setref(true);
 //       setref(false);

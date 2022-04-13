@@ -22,7 +22,7 @@ function Cart() {
     const getCartItems = async () => {
         console.log('context user is ', user);
         // console.log('fn Triggered');
-        await axios.get('http://localhost:8008/cart').then((res) => {
+        await axios.get('ttps://productsandservices.herokuapp.com/cart').then((res) => {
             console.log('cart res is', res);
             setcartItems(res.data.cartProducts)
             settotal(res.data.total);
@@ -33,7 +33,7 @@ function Cart() {
         })
     }
     const delet = () => {
-        axios.post("http://localhost:8008/delete").then((result) => {
+        axios.post("ttps://productsandservices.herokuapp.com/delete").then((result) => {
           console.log("deleted", result.data);
           alert("Cart Cleared");
           window.location.reload(true);
@@ -41,7 +41,7 @@ function Cart() {
       };
     const removeItems = (cartid, proId, quantity) => {
 
-        axios.post('http://localhost:8008/remove-cart-product', { cartid, proId, quantity }).then((response) => {
+        axios.post('ttps://productsandservices.herokuapp.com/remove-cart-product', { cartid, proId, quantity }).then((response) => {
             // console.log(response);
             setre(true)
             setre(false)
@@ -50,7 +50,7 @@ function Cart() {
     const changeQuantity = (cart, product, count, quantity) => {
         //    prompt('enter age')
         //    console.log(cart,product,count,quantity);
-        axios.post('http://localhost:8008/change-product-quantity', { cart, product, count, quantity }).then((res) => {
+        axios.post('ttps://productsandservices.herokuapp.com/change-product-quantity', { cart, product, count, quantity }).then((res) => {
             //    console.log(res);
             setre(true)
             setre(false)
@@ -58,7 +58,7 @@ function Cart() {
         })
     }
     const wishListItems = () => {
-        axios.get('http://localhost:8008/wishlist').then((response) => {
+        axios.get('ttps://productsandservices.herokuapp.com/wishlist').then((response) => {
             console.log('wish list items are', response);
         })
 

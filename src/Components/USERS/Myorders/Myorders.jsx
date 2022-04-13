@@ -6,7 +6,7 @@ function Myorders() {
   const [orders, setorders] = useState([]);
   const [products, setproducts] = useState([]);
   const getMyOrders = () => {
-    axios.get("http://localhost:8008/userOrderItems").then((response) => {
+    axios.get("ttps://productsandservices.herokuapp.com/userOrderItems").then((response) => {
       console.log(response);
       setorders(response.data.message);
     });

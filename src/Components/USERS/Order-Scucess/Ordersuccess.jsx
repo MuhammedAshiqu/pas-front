@@ -8,7 +8,7 @@ function Ordersuccess() {
      const [data, setdata] = useState()
      const [adminTrue,setadminTrue]=AdminTrue
     useEffect(() => {
-        axios.get('http://localhost:8008/orders').then((res)=>{
+        axios.get('ttps://productsandservices.herokuapp.com/orders').then((res)=>{
             console.log(res);
             setdata(res.data)
             setadminTrue(false)

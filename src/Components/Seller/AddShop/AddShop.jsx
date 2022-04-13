@@ -46,7 +46,7 @@ function AddShop() {
             });
         url &&
             (await axios
-                .post('http://localhost:8008/seller/addshop', {
+                .post('ttps://productsandservices.herokuapp.com/seller/addshop', {
                     input: input,
                     url: url,
                     sellerId: seller,

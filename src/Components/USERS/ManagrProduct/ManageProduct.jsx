@@ -11,7 +11,7 @@ function ManageProduct() {
     const [adminTrue,setadminTrue]=AdminTrue
     const [state,setstate]=useState([])
     const manage=()=>{
-        axios.get(`http://localhost:8008/userproducts`).then((res)=>{
+        axios.get(`ttps://productsandservices.herokuapp.com/userproducts`).then((res)=>{
             console.log("userp",res)
             setstate(res.data)
             
@@ -20,7 +20,7 @@ function ManageProduct() {
     const deleteItem =(id)=>{
         alert
         ("deleted")
-        axios.post(`http://localhost:8008/admin/delete-product/${id}`).then((res)=>{
+        axios.post(`ttps://productsandservices.herokuapp.com/admin/delete-product/${id}`).then((res)=>{
             console.log(res);
             setref(true)
             setref(false)

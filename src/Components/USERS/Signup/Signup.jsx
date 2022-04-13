@@ -35,7 +35,7 @@ function Signup() {
     const handleClick = (e) => {
         e.preventDefault();
         notify();
-        axios.post('http://localhost:8008/signup', input).then((result) => {
+        axios.post('ttps://productsandservices.herokuapp.com/signup', input).then((result) => {
             console.log(result);
             if (result.data.message === 'set') {
 

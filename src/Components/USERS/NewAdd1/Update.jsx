@@ -18,7 +18,7 @@ function Update() {
         console.log(input)
     }
     const getData=()=>{
-        axios.get(`http://localhost:8008/edit/${id}`).then((result)=>{
+        axios.get(`ttps://productsandservices.herokuapp.com/edit/${id}`).then((result)=>{
         console.log(result)
         setinput(result.data)
         })

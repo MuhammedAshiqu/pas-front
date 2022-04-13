@@ -22,7 +22,7 @@
 
 //   const addItem = (itm) => {
 //     console.log(itm);
-//     axios.get(`http://localhost:8008/add-to-cart/${itm}`).then((resp) => {
+//     axios.get(`ttps://productsandservices.herokuapp.com/add-to-cart/${itm}`).then((resp) => {
 //       console.log(resp);
 //       resp && toast(resp.data.message)
 //       alert("Product Added ,Checkout Cart")
@@ -37,7 +37,7 @@
 
 //   const description = () => {
 //     console.log("product id", id)
-//     axios.get(`http://localhost:8008/describ/${id}`).then((response) => {
+//     axios.get(`ttps://productsandservices.herokuapp.com/describ/${id}`).then((response) => {
 //       console.log("product details", response.data)
 //       setdetails(response.data);
 //     })
@@ -118,7 +118,7 @@ function Productd() {
 
   const addItem = (itm) => {
     console.log(itm);
-    axios.get(`http://localhost:8008/add-to-cart/${itm}`).then((resp) => {
+    axios.get(`ttps://productsandservices.herokuapp.com/add-to-cart/${itm}`).then((resp) => {
       console.log(resp);
       resp && toast(resp.data.message)
       alert("Product Added ,Checkout Cart")
@@ -133,7 +133,7 @@ function Productd() {
 
   const description = () => {
     console.log("product id", id)
-    axios.get(`http://localhost:8008/describ/${id}`).then((response) => {
+    axios.get(`ttps://productsandservices.herokuapp.com/describ/${id}`).then((response) => {
       console.log("product details", response.data)
       setdetails(response.data);
     })
