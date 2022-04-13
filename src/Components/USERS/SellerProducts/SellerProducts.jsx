@@ -11,7 +11,7 @@ function SellerProducts() {
   const fetchProducts = async () => {
     try {
       const response = await axios.get(
-        `ttps://productsandservices.herokuapp.com/products/${email}`
+        `https://productsandservices.herokuapp.com/products/${email}`
       );
       console.log(response.data);
       setProducts(response.data);

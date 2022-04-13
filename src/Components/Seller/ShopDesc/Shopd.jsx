@@ -23,7 +23,7 @@ function Shopd() {
 
     const description=()=>{
       console.log("product id",id)
-        axios.get(`ttps://productsandservices.herokuapp.com/seller/shopdescrib/${id}`).then((response)=>{
+        axios.get(`https://productsandservices.herokuapp.com/seller/shopdescrib/${id}`).then((response)=>{
             console.log("shop details",response.data)
             setdetails(response.data);
         })

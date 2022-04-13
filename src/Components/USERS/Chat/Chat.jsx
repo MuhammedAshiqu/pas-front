@@ -15,14 +15,14 @@ function Chat() {
 
   const getAllChats = async () => {
     console.log(id);
-    await axios.get(`ttps://productsandservices.herokuapp.com/chat/${id}`).then((response) => {
+    await axios.get(`https://productsandservices.herokuapp.com/chat/${id}`).then((response) => {
       console.log('response message', response);
       setchat(response.data.message);
     })
   }
   const getAllChats1 = async () => {
     console.log(id);
-    await axios.get(`ttps://productsandservices.herokuapp.com/chat1/${id}`).then((response) => {
+    await axios.get(`https://productsandservices.herokuapp.com/chat1/${id}`).then((response) => {
       console.log('reply', response);
       setreply(response.data.message);
     })
@@ -39,7 +39,7 @@ function Chat() {
   console.log("hai", result);
   console.log('id', id);
   const sendChat = () => {
-    axios.post('ttps://productsandservices.herokuapp.com/chat', { reciver: id, message: message }).then((response) => {
+    axios.post('https://productsandservices.herokuapp.com/chat', { reciver: id, message: message }).then((response) => {
       alert("Message Sent Successfully");
       window.location.reload(true);
     })

@@ -44,7 +44,7 @@ function About() {
     const handleClick = (e) => {
         e.preventDefault();
 
-        axios.post('ttps://productsandservices.herokuapp.com/signin', input).then((response) => {
+        axios.post('https://productsandservices.herokuapp.com/signin', input).then((response) => {
             const vname = response.data.session?.user;
             console.log('chh', vname);
             const vvname = response.data.session?.user.Name;

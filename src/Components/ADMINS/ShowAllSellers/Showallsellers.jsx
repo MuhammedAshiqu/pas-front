@@ -7,7 +7,7 @@ function Showallsellers() {
   const [ref, setref] = useState(false);
   const [allsellers, setallsellers] = useState([]);
   const getAllSellers = () => {
-    axios.get("ttps://productsandservices.herokuapp.com/admin/all-sellers").then((result) => {
+    axios.get("https://productsandservices.herokuapp.com/admin/all-sellers").then((result) => {
       console.log(result);
       setallsellers(result.data.sellers);
     });
@@ -16,7 +16,7 @@ function Showallsellers() {
     let it = window.confirm("Are You Sure Delete ?");
     it &&
       axios
-        .get(`ttps://productsandservices.herokuapp.com/admin/remove-seller/${id}`)
+        .get(`https://productsandservices.herokuapp.com/admin/remove-seller/${id}`)
         .then((res) => {
           console.log(res);
           setref(true);
@@ -27,7 +27,7 @@ function Showallsellers() {
     alert("deleted");
 
     axios
-      .get("ttps://productsandservices.herokuapp.com/seller/remove-all-sellers")
+      .get("https://productsandservices.herokuapp.com/seller/remove-all-sellers")
       .then((res) => {
         console.log(res);
         setref(true);

@@ -21,7 +21,7 @@ function NewService() {
 
   const handleSubmit = () => {
     axios
-      .post("ttps://productsandservices.herokuapp.com/admin/addService", input)
+      .post("https://productsandservices.herokuapp.com/admin/addService", input)
       .then((result) => {
         console.log(result);
         alert("added");

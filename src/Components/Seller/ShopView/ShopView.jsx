@@ -10,7 +10,7 @@ function Change() {
   const [items, setitems] = useState([]);
 
   const getsellerdetails = () => {
-    axios.get("ttps://productsandservices.herokuapp.com/seller/").then((response) => {
+    axios.get("https://productsandservices.herokuapp.com/seller/").then((response) => {
       console.log(response);
       setitems(response.data.shop);
     });
@@ -19,7 +19,7 @@ function Change() {
   const deleteItem = (id) => {
     alert("deleted");
     axios
-      .post(`ttps://productsandservices.herokuapp.com/seller/delete-product/${id}`)
+      .post(`https://productsandservices.herokuapp.com/seller/delete-product/${id}`)
       .then((res) => {
         console.log(res);
         setref(true);
@@ -31,7 +31,7 @@ function Change() {
     alert("deleted");
 
     axios
-      .get("ttps://productsandservices.herokuapp.com/seller/delete-all-products")
+      .get("https://productsandservices.herokuapp.com/seller/delete-all-products")
       .then((res) => {
         console.log(res);
         setref(true);

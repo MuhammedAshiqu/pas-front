@@ -7,7 +7,7 @@ function ShowShops() {
   const [ref, setref] = useState(false);
   const [allshops, setallshops] = useState([]);
   const getAllShops = () => {
-    axios.get("ttps://productsandservices.herokuapp.com/admin/all-shops").then((result) => {
+    axios.get("https://productsandservices.herokuapp.com/admin/all-shops").then((result) => {
       console.log(result);
       setallshops(result.data.shops);
     });
@@ -15,7 +15,7 @@ function ShowShops() {
   const deleteShop = (id) => {
     let it = window.confirm("Are You Sure Delete ?");
     it &&
-      axios.get(`ttps://productsandservices.herokuapp.com/admin/remove-shop/${id}`).then((res) => {
+      axios.get(`https://productsandservices.herokuapp.com/admin/remove-shop/${id}`).then((res) => {
         console.log(res);
         setref(true);
         setref(false);

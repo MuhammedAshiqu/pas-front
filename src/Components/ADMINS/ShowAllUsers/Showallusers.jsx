@@ -6,7 +6,7 @@ function Showallusers() {
   const [ref, setref] = useState(false);
   const [allusers, setallusers] = useState([]);
   const getAllUsers = () => {
-    axios.get("ttps://productsandservices.herokuapp.com/admin/all-users").then((result) => {
+    axios.get("https://productsandservices.herokuapp.com/admin/all-users").then((result) => {
       console.log(result);
       setallusers(result.data.users);
     });
@@ -14,7 +14,7 @@ function Showallusers() {
   const deleteUser = (id) => {
     let it = window.confirm("Are You Sure Delete ?");
     it &&
-      axios.get(`ttps://productsandservices.herokuapp.com/admin/remove-user/${id}`).then((res) => {
+      axios.get(`https://productsandservices.herokuapp.com/admin/remove-user/${id}`).then((res) => {
         console.log(res);
         setref(true);
         setref(false);

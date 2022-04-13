@@ -35,7 +35,7 @@ function Main() {
     });
   };
   const data=()=>{
-    axios.get("ttps://productsandservices.herokuapp.com/seller",).then((res)=>{
+    axios.get("https://productsandservices.herokuapp.com/seller",).then((res)=>{
       console.log("shop data",res);
       setstate(res.data.shop)
     })

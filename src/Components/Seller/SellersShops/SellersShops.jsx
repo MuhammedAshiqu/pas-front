@@ -8,7 +8,7 @@ function SellersShops() {
     const { seller } = useContext(DataContext);
 
     const getShops = async () => {
-        const response = await axios.get(`ttps://productsandservices.herokuapp.com/seller/all-shop/${seller._id}`);
+        const response = await axios.get(`https://productsandservices.herokuapp.com/seller/all-shop/${seller._id}`);
         console.log(response.data)
         setShops(response.data)
     }

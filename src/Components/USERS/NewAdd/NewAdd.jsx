@@ -43,7 +43,7 @@ function NewAdd() {
             console.log(response);
             seturl(response.data.url)
         })
-        url && await axios.post('ttps://productsandservices.herokuapp.com/addproduct', { input: input,url:url }).then((res) => {
+        url && await axios.post('https://productsandservices.herokuapp.com/addproduct', { input: input,url:url }).then((res) => {
             console.log("ee",res);
             res.data.vibe && alert('successfuly added')
             setimage()

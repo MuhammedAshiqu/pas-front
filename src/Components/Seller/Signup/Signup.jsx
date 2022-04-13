@@ -37,7 +37,7 @@ function SlrSignup() {
     const handleClick =(e)=>{
         e.preventDefault()
         notify();
-        axios.post('ttps://productsandservices.herokuapp.com/seller/signup',input).then((result)=>{
+        axios.post('https://productsandservices.herokuapp.com/seller/signup',input).then((result)=>{
             console.log(result);
             result.data.message ==='set' ?  history.push('/seller/login') : seterror('All fields required')
         })

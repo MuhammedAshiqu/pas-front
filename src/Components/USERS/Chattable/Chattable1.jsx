@@ -10,7 +10,7 @@ function ChatTable1() {
   const [send, setsend] = useState([])
   const getMessages = async() => {
     
-    await axios.get(`ttps://productsandservices.herokuapp.com/seller/messages`).then((result) => {
+    await axios.get(`https://productsandservices.herokuapp.com/seller/messages`).then((result) => {
       console.log("new chat",result.data)
       setarr(result.data)
 

@@ -11,20 +11,20 @@ function Profile() {
   const [openWish, setopenwish] = useState();
 
   const getUserDetails = () => {
-    axios.get("ttps://productsandservices.herokuapp.com/userDetails").then((res) => {
+    axios.get("https://productsandservices.herokuapp.com/userDetails").then((res) => {
       console.log(res);
       setnwUser(res.data.message);
     });
   };
   const getWishListItems = (textt) => {
-    axios.get("ttps://productsandservices.herokuapp.com/wishlist").then((resp) => {
+    axios.get("https://productsandservices.herokuapp.com/wishlist").then((resp) => {
       console.log(resp);
       // setopenwish(resp.data.textt)
     });
   };
   const getUserorders = (txt) => {
     setopenwish(txt);
-    axios.get("ttps://productsandservices.herokuapp.com/userOrderItems").then((response) => {
+    axios.get("https://productsandservices.herokuapp.com/userOrderItems").then((response) => {
       console.log(response);
       setopenwish(response.data.txt);
     });

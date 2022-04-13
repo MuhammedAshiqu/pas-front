@@ -33,7 +33,7 @@ function UpdateProduct() {
     Description: ''
   })
   const getData = () => {
-    axios.get(`ttps://productsandservices.herokuapp.com/seller-edit/${id}`).then((result) => {
+    axios.get(`https://productsandservices.herokuapp.com/seller-edit/${id}`).then((result) => {
       console.log(result)
       setinput(result.data)
     })
@@ -45,7 +45,7 @@ function UpdateProduct() {
   }
   const handleAdd = async () => {
     // e.preventDefault()
-    await axios.post('ttps://productsandservices.herokuapp.com/seller-editprod', { id: id, input: input }).then((res) => {
+    await axios.post('https://productsandservices.herokuapp.com/seller-editprod', { id: id, input: input }).then((res) => {
       console.log(res);
 
     })

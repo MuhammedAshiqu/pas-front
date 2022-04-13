@@ -13,7 +13,7 @@ function CardS({ i, setres }) {
 
   const addItem = (itm) => {
     console.log(itm);
-    axios.get(`ttps://productsandservices.herokuapp.com/add-to-cart/${itm}`).then((resp) => {
+    axios.get(`https://productsandservices.herokuapp.com/add-to-cart/${itm}`).then((resp) => {
       console.log(resp);
       resp && toast(resp.data.message);
       setres(true);
@@ -23,7 +23,7 @@ function CardS({ i, setres }) {
 
   const wishList = (itm) => {
     axios
-      .post(`ttps://productsandservices.herokuapp.com/add-to-wishlist/${itm}`)
+      .post(`https://productsandservices.herokuapp.com/add-to-wishlist/${itm}`)
       .then((response) => {
         console.log(response);
         response && toast(response.data.message);
@@ -31,7 +31,7 @@ function CardS({ i, setres }) {
   };
   const sendChat = (id) => {
     console.log(id);
-    // axios.get(`ttps://productsandservices.herokuapp.com/chat${id}`)
+    // axios.get(`https://productsandservices.herokuapp.com/chat${id}`)
   };
   useEffect(() => {
     // it ? setisLoaged(true) :setisLoaged(false)
