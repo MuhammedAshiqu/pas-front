@@ -1,0 +1,107 @@
+/* .bottom span {
+    margin: 20px;
+}
+.content{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+} */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap");
+.Cart {
+  font-family: "Nunito", sans-serif;
+  margin-top: 2%;
+}
+.man {
+  display: flex;
+  margin: 30px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(211, 211, 211, 0.3);
+  /* background-color: rgb(192,192,192,0.3); */
+}
+.man .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+.man .bottom {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+}
+
+.man .remove {
+  text-align: center;
+}
+.man .remove button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.bottom span {
+  margin: 10px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+}
+.bottom button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.total {
+  margin-top: 25px;
+  text-align: end;
+  margin-right: 8%;
+}
+.total h2 {
+  margin-top: 53px;
+}
+.order-btn {
+  color: #333;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.btn-sucess{
+  background: rgb(30, 182, 63);
+  border: none;
+  padding:10px 25px;
+  font-weight: 600px;
+  border-radius: 10px;
+  /* margin-right: 2em; */
+  margin: 2em;
+  color:white;
+  align-items: center;
+
+
+}
+.btn-danger{
+  background: rgb(223, 28, 2);
+  border: none;
+  padding:10px 25px;
+  font-weight: 600px;
+  border-radius: 10px;
+  color:white;
+}
+.hr{
+  position:'absolute';
+  right:'5%';
+  width:'20%';
+  margin: 4em;
+  height: 3px;
+  background: black;
+}
+.top img{
+  border-radius: 40px;
+  margin: 1em;
+
+}
+.Cart h1{
+  font-size: 40px;
+  color: black;
+  font-weight: 700;
+}

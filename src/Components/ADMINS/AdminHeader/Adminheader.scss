@@ -1,0 +1,33 @@
+
+:root {
+    --blue: #0066ff;
+    --white: #ffffff;
+  }
+
+  .bg-blue {
+    background-color: var(--blue);
+  }
+  .navbar {
+    &.navbar-dark {
+      * {
+        color: var(--white);
+      }
+    }
+    display: flex;
+    align-items: center;
+    padding: 1rem 40px;
+    .navbar-nav {
+      margin-left: auto;
+      .nav-list {
+        list-style: none;
+        .nav-item {
+          display: inline-block;
+          padding: 0.2rem 1.0rem;
+  
+          &:nth-last-child(1) {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
